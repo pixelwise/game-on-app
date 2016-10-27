@@ -34,7 +34,7 @@ var app = {
     // function, we must explicitly call 'app.receivedEvent(...);'
     onDeviceReady: function() {
         //app.receivedEvent('deviceready');
-		window.location.href = 'http://www.createk.nl/phonegap/www/index.html';
+		navigator.app.loadUrl(url, { openExternal:false }); 
     },
     // Update DOM on a Received Event
     receivedEvent: function(id) {
