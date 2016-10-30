@@ -57,7 +57,7 @@
 		   var url = "http://www.createk.nl/phonegap/www/index.html";
 			// Listen for requests to use it.
 			    window.addEventListener("message", function(event) {
-			      if (url.indeOf(event.origin) > -1) {
+			      if (url.indexOf(event.origin) > -1) {
 			        if (event.data == "camera") {
 								alert('get pic');
 			          navigator.camera.getPicture(function(imageData) {
